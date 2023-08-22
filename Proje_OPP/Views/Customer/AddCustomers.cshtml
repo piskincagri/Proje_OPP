@@ -1,0 +1,23 @@
+﻿@model Proje_OPP.Entitiy.Customer
+@{
+    ViewData["Title"] = "AddCustomers";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Yeni Müşteri Sayfası</h1>
+
+<form method="post">
+
+    @Html.Label("Müşteri Adı:")
+    @Html.TextAreaFor(x => x.CustomerName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şehir")
+    @Html.TextAreaFor(x => x.CustomerCity, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Müşteri Kaydet</button>
+
+
+</form>
+
+
+

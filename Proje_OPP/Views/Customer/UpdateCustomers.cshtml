@@ -1,0 +1,26 @@
+﻿@model Proje_OPP.Entitiy.Customer
+@{
+    ViewData["Title"] = "UpdateCustomers";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Müşteri Güncelleme Sayfası</h1>
+
+<form method="post">
+
+    @Html.Label("Müşteri ID")
+    @Html.TextAreaFor(x => x.CustomerID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Müşteri Adı")
+    @Html.TextAreaFor(x => x.CustomerName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şehir")
+    @Html.TextAreaFor(x => x.CustomerCity, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+
+
+</form>
+
+
+
